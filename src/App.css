@@ -1,38 +1,212 @@
-.App {
-  text-align: center;
+@import url("./assets/css/_reset.css");
+
+header {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+main {
+    min-height: calc(100vh - 200px);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+footer {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.footer__text {
+    color: white;
+    font-size: 10px;
+    font-weight: 400;
 }
 
-.App-link {
-  color: #61dafb;
+.menu {
+    display: flex;
+    flex-direction: row;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.menu__item___img {
+    width: 35px;
+    height: auto;
+    margin-right: 5px;
+}
+
+.menu__item___titulo {
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+abbr, acronym
+{
+    cursor: pointer;
+}
+
+.botao-limpar {
+    background-color: #FFFFFF;
+    color: #000000;
+    border: 1px solid #ffffffea;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    height: 30px;
+    font-weight: bold;
+}
+
+.titulo {
+    color: white;
+    font-size: 34px;
+    margin: 10px 0;
+    border-bottom: 2px solid #FFFFFF;
+    padding-bottom: 5px;
+}
+
+:root {
+    --cor1: 10%;
+    --cor2: 90%;
+}
+
+.estrelas {
+    margin: 5px 0;
+    display: flex;
+}
+
+.estrela {
+    color: rgb(240, 240, 14);
+}
+.estrela-escura {
+    color: #000000;
+}
+
+.info {
+    display: flex;
+}
+
+.filtros {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 20px 0;
+}
+.filtro {
+    margin-right: 20px;
+}
+.filtros__titulo {
+    color: white;
+    font-size: 20px;
+    margin: 10px 0;
+}
+.filtros__lista {
+    display: flex;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.filtros__img35{
+    width: 35px;
+    height: auto;
+    cursor: pointer;
+}
+.filtros__img20{
+    width: 20px;
+    height: auto;
+}
+.filtros__icone {
+    color: #FFFFFF;
+    margin-right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.filtro__ativo {
+    border: 1px solid #FFFFFF;
+}
+.personagens {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.personagem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+    background-color: #f0e6e6;
+    margin: 5px;
+    border-radius: 5px;
+    padding: 10px;
+    height: 160px;
+}
+.personagem__img {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #CCCCCC;
+    cursor: pointer;
+}
+.personagem__info {
+    text-align: center;
+}
+.personagem__nome{
+    font-size: 14px;
+    margin-top: 5px;
+    font-weight: 600;
+    color: #000000;
+}
+.personagem__nacao{
+    font-size: 12px;
+    margin-top: 5px;
+    font-weight: 400;
+    color: #000000;
+}
+.personagem__extra {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5px;
+    background-color: #1d1b1b;
+    padding: 2px 0;
+    border-radius: 5px;
+}
+.sexo__icon {
+    color: #FFFFFF;
+}
+.card_icone {
+    width: 20px;
+    height: auto;
+}
+.sem-resultado {
+    color: #FFFFFF;
+    font-size: 20px;
+    margin: 10px 15px;
+}
+.anemo-bc {
+    background: radial-gradient(#FFFFFF var(--cor1), #4ad6a7 var(--cor2));
+}
+.cryo-bc {
+    background: radial-gradient(#FFFFFF var(--cor1), #B6F0FD var(--cor2));
+}
+.electro-bc {
+    background: radial-gradient(#FFFFFF var(--cor1), #cb7efe var(--cor2));
+}
+.geo-bc {
+    background: radial-gradient(#FFFFFF var(--cor1), #ffd14b var(--cor2));
+}
+.hydro-bc {
+    background: radial-gradient(#FFFFFF var(--cor1), #03d0fb var(--cor2));
+}
+.pyro-bc {
+    background: radial-gradient(#FFFFFF var(--cor1), #fc9d62 var(--cor2));
+}
+.indefinido-bc {
+    background: conic-gradient(from 90deg, #4ad6a7, #B6F0FD, #cb7efe, #ffd14b, #03d0fb, #fc9d62);
 }
